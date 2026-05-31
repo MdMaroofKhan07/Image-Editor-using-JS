@@ -56,7 +56,8 @@ Image Editor/
 
 ### Main Interface
 
-![alt text](<Image Editor Project.png>)
+<img width="1902" height="923" alt="image" src="https://github.com/user-attachments/assets/f4de4dbf-31a9-4ac6-b6d3-995fc0ea3149" />
+
 
 ---
 
