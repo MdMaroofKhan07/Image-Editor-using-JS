@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("images/Project Image5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container{
+  width: 850px;
+  padding: 30px 35px 35px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background: rgba(241, 6, 186, 0.15);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.container.disable :where(.editor-panel, .reset-filter, .save-img){
+  opacity: 0.6;
+  pointer-events: none;
+}
+.container h2{
+  font-size: 22px;
+  font-weight: 500;
+}
+.container .wrapper{
+  display: flex;
+  margin: 20px 0;
+  min-height: 335px;
+}
+.wrapper .editor-panel{
+  width: 280px;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.editor-panel .title{
+  display: block;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.editor-panel .options{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.editor-panel .filter button{
+  width: calc(100% / 2 - 4px);
+}
+.editor-panel button{
+  height: 40px;
+  font-size: 14px;
+  color: #6c857d;
+  margin-bottom: 8px;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.editor-panel button:hover{
+  background: #f5f5f5;
+}
+.editor-panel button.active{
+  color: #fff;
+  background: #5372f0;
+  border-color: #5372f0;
+}
+.editor-panel .rotate{
+  margin-top: 17px;
+}
+.editor-panel .rotate button{
+  width: calc(100% / 4 - 3px);
+}
+.editor-panel .slider{
+  margin-top: 12px;
+}
+.editor-panel .slider input{
+  width: 100%;
+  height: 5px;
+  accent-color: #5372f0;
+}
+.rotate button:nth-child(3),
+.rotate button:nth-child(4){
+  font-size: 18px;
+}
+.rotate button:nth-child(3) i{
+  transform: rotate(90deg);
+}
+.wrapper .preview-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.wrapper .preview-img img{
+  max-width: 490px;
+  max-height: 335px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+.controls{
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+.controls button{
+  font-size: 14px;
+  background: #fff;
+  padding: 11px 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.controls .reset-filter{
+  color: #6c857d;
+  border: 1px solid #6c857d;
+}
+.controls .row .import-img{
+  background: #6c857d;
+  border: 1px solid #6c857d;
+  color: #fff;
+}
+.controls .row .save-img{
+  background: #5372f0;
+  border: 1px solid #5372f0;
+  color: #fff;
+  margin-left: 5px;
+}
+
+/* Headings and labels */
+.container h2,
+.editor-panel .title,
+.filter-info .name,
+.filter-info .value{
+    color: #ffffff;
+}
+
+/* Panel border */
+.wrapper .editor-panel{
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* Default buttons */
+.editor-panel button{
+    background: rgba(255,255,255,0.15);
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* Hover effect */
+.editor-panel button:hover{
+    background: rgba(255,255,255,0.25);
+}
+
+/* Active filter button */
+.editor-panel button.active{
+    background: #ff4fa3;
+    border-color: #ff4fa3;
+    color: white;
+}
+
+/* Slider color */
+.editor-panel .slider input{
+    accent-color: #ff4fa3;
+}
+
+
+.controls .reset-filter{
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+.controls .row .import-img{
+    background: #ff4fa3;
+    border-color: #ff4fa3;
+    color: white;
+}
+
+.controls .row .save-img{
+    background: #6d5dfc;
+    border-color: #6d5dfc;
+    color: white;
+}
+
+.container{
+    background: rgba(90, 0, 90, 0.35);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
